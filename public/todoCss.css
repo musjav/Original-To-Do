@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: black;
+    height: auto;
+    background-size: contain;
+    min-width: 523px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.main-content {
+    /* padding-top: 200px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+
+}
+
+#todo-section {
+    padding-left: 40px;
+    text-align: center;
+}
+
+.main {
+    padding-bottom: 50px;
+}
+
+button {
+    border-radius: 50px !important;
+    padding: 10px 30px 10px 30px !important;
+    border: solid 3px rgba(0, 0, 0, 0.447) !important;
+}
+
+#todo-section button {
+    text-align: center;
+    font-size: 15px;
+}
+
+#todo-section ul li {
+    word-wrap: break-word;
+    white-space: normal;
+    border: 4px rgba(255, 255, 255, 0.4) solid;
+    background-color: rgba(0, 0, 0, 0.676);
+    border-radius: 20px;
+    padding: 4px 10px 4px 20px;
+    color: white;
+    list-style: inside;
+    font-size: 15px;
+    margin: 7px;
+    text-align: left;
+}
+
+#todo-section ul li button {
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+#showdatabase {
+    padding-left: 20px;
+    border: 4px rgba(255, 255, 255, 0.4) solid;
+    background-color: rgba(0, 0, 0, 0.676);
+    border-radius: 20px;
+    /* width: 98%; */
+    margin-left: 20px;
+}
+
+#showdatabase li {
+    text-align: left;
+    margin: 25px;
+    list-style: inside;
+    color: white;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+#database {
+    margin: auto;
+    text-align: center;
+}
+
+#showdata {
+    padding: 20px;
+    text-align: center;
+}
+
+.datain {
+    padding: 20px;
+}
+
+#todo-section ul li {
+    width: 100%;
+}
+
+input {
+    background-color: #00000071 !important;
+    color: rgb(255, 255, 255) !important;
+    outline: none;
+    border: solid 2px;
+    border-radius: 90px !important;
+    border-color: #e950be;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+input:focus {
+    background-color: #191919 !important; /* Background color when input is focused */
+}
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    input {
+        width: 80%;
+        /* Adjust as needed for smaller screens */
+    }
+
+    #showdata {
+
+        padding-top: 100px !important;
+    }
+
+}

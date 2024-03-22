@@ -1,0 +1,138 @@
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://blog.openclassrooms.com/en/wp-content/uploads/sites/4/2018/03/web-develoment.jpg') center/cover no-repeat;
+    /* Replace with your image URL */
+    color: #fff;
+    /* Light text color for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+    /* Make the body a positioning context */
+    background-color: black;
+    /* min-width: 350px; */
+
+}
+
+body::before {
+    /* content: ''; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.458);
+    /* Black color with 50% opacity */
+    padding: 370px;
+    z-index: -1;
+    /* Place the overlay behind other content */
+}
+
+.container {
+    top: 100px;
+    max-width: 400px;
+    padding: 30px;
+    background: linear-gradient(135deg, #bc2a8ea5, #e95a50b5, #fccc63c6);
+    /* Gradients for the button */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(18, 18, 18);
+    text-align: center;
+    color: #ffffffa7;
+    /* Light text color for better contrast */
+    position: relative;
+    /* Create stacking context */
+    z-index: 1;
+    /* Bring the container above the overlay */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    /* White background for input fields */
+    color: #333;
+    /* Dark text color for input fields */
+}
+
+button {
+    padding: 12px;
+    background: linear-gradient(135deg, #bc2a8d, #e95950, #fccc63);
+    /* Gradients for the button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    filter: brightness(1.2);
+    /* Slightly increase brightness on hover for a better visual effect */
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+#mesg {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-shadow: rgb(255, 0, 0) 2px 0px 0px, rgb(255, 0, 0) 1.75517px 0.958851px 0px, rgb(255, 0, 0) 1.0806px 1.68294px 0px, rgb(255, 0, 0) 0.141474px 1.99499px 0px, rgb(255, 0, 0) -0.832294px 1.81859px 0px, rgb(255, 0, 0) -1.60229px 1.19694px 0px, rgb(255, 0, 0) -1.97998px 0.28224px 0px, rgb(255, 0, 0) -1.87291px -0.701566px 0px, rgb(255, 0, 0) -1.30729px -1.5136px 0px, rgb(255, 0, 0) -0.421592px -1.95506px 0px, rgb(255, 0, 0) 0.567324px -1.91785px 0px, rgb(255, 0, 0) 1.41734px -1.41108px 0px, rgb(255, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}
